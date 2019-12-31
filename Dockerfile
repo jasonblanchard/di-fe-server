@@ -17,6 +17,7 @@ WORKDIR $APP_HOME
 RUN npm ci
 
 COPY --chown=docker:docker src $APP_HOME/src/
+COPY --chown=docker:docker views $APP_HOME/views/
 COPY --chown=docker:docker tsconfig.json $APP_HOME/
 
 WORKDIR $APP_HOME

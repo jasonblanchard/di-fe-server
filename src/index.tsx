@@ -38,5 +38,5 @@ app.get('*', (_request, response) => {
 });
 
 app.listen({ port: PORT }, () => {
-  console.log(`🚀 entry-gql-edge ready`);
+  console.log(`🚀 app server ready`);
 });
