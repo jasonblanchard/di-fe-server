@@ -29,6 +29,7 @@ USER docker
 WORKDIR $APP_HOME
 COPY --from=build --chown=docker:docker $PROD_DEPS/node_modules $APP_HOME/node_modules/
 COPY --from=build --chown=docker:docker $APP_HOME/build $APP_HOME/build
+COPY --from=build --chown=docker:docker $APP_HOME/views $APP_HOME/views
 COPY --from=build --chown=docker:docker $APP_HOME/package.json $APP_HOME/package.json
 
 EXPOSE 4000
