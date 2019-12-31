@@ -21,8 +21,6 @@ const PAGE_TITLE = process.env.PAGE_TITLE || 'App';
 const APP_CONTAINER_ID = process.env.APP_CONTAINER_ID || 'app';
 const jsSource = `${BASE_PATH}${JS_BUNDLE_PATH}`;
 
-console.log(process.env.BASE_PATH, BASE_PATH, jsSource);
-
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
