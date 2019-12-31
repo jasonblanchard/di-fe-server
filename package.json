@@ -1,0 +1,26 @@
+{
+  "name": "di-fe-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "nodemon build/index.js",
+    "start": "node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express-handlebars": "^3.1.0",
+    "@types/morgan": "^1.7.37",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "morgan": "^1.9.1"
+  }
+}
